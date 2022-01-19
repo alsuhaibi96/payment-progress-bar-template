@@ -1,35 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <title>Progress Bar</title>
 </head>
+
 <body>
-    <div class="progress-container" dir="rtl">
-        <div class="progress-line" >
-        <div class="circle is-active">
-1
-        </div>
-        <div class="circle">
-            2
-        </div>
-        <div class="circle">
-            3
-        </div>
-        
-    </div>
-    <div class="btns-container">
+    <section>
+        <div class="progress-container" dir="rtl">
+            <div class="progress-line">
+                <button class="circle is-active">
+                    1
+                </button>
+                <button class="circle">
+                    2
+                </button>
+                <button class="circle">
+                    3
+                </button>
+
+            </div>
+            <!-- <div class="btns-container">
 <button class="next-btn">التالي</button>
 <button class="previous-btn">السابق</button>
 
-    </div>
-    </div>
+    </div> -->
+            <div class="payment-personal-info-container">
+                <div class="personal-info-form-container">
+                    <h3>بياناتك وعنوانك</h3>
+                    <form class="personal-info-form" id="personal-info-from">
 
+                        <label>المدينة / الدولة</label><br>
+
+
+                        <select class="buyer-countrycode">
+                            <option value="">
+
+                                اليمن
+                            </option>
+
+                            <option>
+                                مصر
+                            </option>
+
+                        </select>
+
+                        <div class="buyer-input-container" style="margin-top: 8px;">
+
+                            <label>الاسم الكامل (الاول واللقب)</label><br>
+                            <input id="#buyer-full-name" type="text" class="">
+                            <br>
+
+
+                            <label>رقم الهاتف</label><br>
+
+                            <input id="#buyer-phonenumber" type="number" class="">
+                            <br>
+                            <label> العنوان</label><br>
+
+                            <input id="#buyer-address" type="text" class="">
+                            <br>
+                            <label></label><br>
+
+                            <input id="#buyer-apt-no" type="number" class="">
+                            <br>
+                            <div class="buyer-row-container">
+                                <input id="#buyer-city" type="text" class="">
+                                <input id="#buyer-distinct" type="text" class="">
+                                <input id="#buyer-zip-code" type="number" class="">
+
+                            </div>
+
+
+                        </div>
+
+                        <label class="payment-checkbox-container">
+                            <span class="payment-agree">اجعل هذا عنواني الرئيسي</span>
+                            <input type="checkbox">
+
+                            <br>
+                            <span class="payment-checkmark"></span>
+                        </label>
+
+
+
+                        <button type="submit" class="payment-save-address">إنشاء حساب</button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
     <script src="js/app.js">
-        </script>
+    </script>
 </body>
+
 </html>
