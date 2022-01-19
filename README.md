@@ -1,2 +1,2 @@
 # payment-progress-bar-template
-A progress bar for steps registeration
+A Payment progress bar for registeration steps 
